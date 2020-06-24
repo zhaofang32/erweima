@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+/* 分组选择器： 公用同一套样式 符号是一个逗号隔开*/
+body,html,.swiper-container,.main{width: 100%;height:100%;
+overflow: hidden/*溢出隐藏*/
+}
+html{font-size: 100px;}/*设置根元素字体大小*/
+
+/*把所有运动元素隐藏起来 opacity：0*/
+/*.page1 .text,.page1 .text .text01,.page1 .text .text02,.page1 .text .text03,.page1 .text .text04,.page1 .tuzhang{opacity:0}*/
+
+/*箭头*/
+.arrow{ z-index:99; /*层*/
+position:absolute;/*绝对定位*/
+bottom:.2rem; 
+left:50%;margin-left:-.425rem; /*页面水平居中*/
+width:.85rem; 
+height:.83rem; 
+background:url(../images/arrow.png) no-repeat;
+ background-size:cover;
+/*背景显示效果*/
+-webkit-animation: fadeInUp 1s .2s infinite ease both;
+        animation: fadeInUp 1s .2s infinite ease both;
+}
+/*音乐*/
+.music{z-index:100;position:absolute;top:.2rem;left:.2rem;width:.6rem;height:.6rem;background: url("../audio/music.svg") no-repeat;background-size:100% 100%}
+.music audio {
+display: none;/*隐藏*/
+}
+/*音乐动画*/
+.music {
+    -webkit-animation: musicMove 1s linear 0s infinite both;
+    animation: musicMove 1s linear 0s infinite both;
+}
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* 第一屏*/
+.page1{	background:url(../images/page1/bg1.jpg) no-repeat; background-size:100% 100%;}

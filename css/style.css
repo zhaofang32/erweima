@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+/* 分组选择器： 公用同一套样式 符号是一个逗号隔开*/
+body,html,.swiper-container,.main{width: 100%;height:100%;overflow: hidden}
+html{font-size: 100px;}
+.page1 .text,.page1 .text .text01,.page1 .text .text02,.page1 .text .text03,.page1 .text .text04,.page1 .tuzhang,.page2 .text1 span,.page2 .text2 span,.page3 .circle,.page3 .text,.page3 .people div,.page3 .btns,.page4 .contact{opacity:0}
+/*箭头*/
+.arrow{ z-index:99; position:absolute; bottom:.2rem; left:50%; margin-left:-.425rem; width:.85rem; height:.83rem; background:url(../images/page1/jiantou.jpg) no-repeat; background-size:cover;
+-webkit-animation: fadeInUp 1s .2s infinite ease both;
+        animation: fadeInUp 1s .2s infinite ease both;
+}
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/* 第一屏*/
+.page1{ background:url(../images/page1/tu1.jpg) no-repeat; background-size:100% 100%;}
+.page1 .text div{width:1.38rem;margin:.3rem auto}
+.page1 .text .text01{height:1.4rem; background:url(../images/page1/tu2.jpg) no-repeat;background-size: cover;}
+.page1 .text .text02{height:0.2rem; background:url(../images/page1/tu3.jpg) no-repeat;background-size: cover;}
+/* 第一屏元素动画*/
+#page1 .text{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both;}
+#page1 .text .text01{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both}
+#page1 .text .text02{-webkit-animation: fadeIn 1s ease .6s both;animation: fadeIn 1s ease .6s both}
+#page1 .text .text03{-webkit-animation: fadeIn 1s ease 1s both;animation: fadeIn 1s ease 1s both}
+#page1 .text .text04{-webkit-animation: fadeIn 1s ease 1.4s both;animation: fadeIn 1s ease 1.4s both}
+#page1 .tuzhang{-webkit-animation: tada 1s ease 1.8s both;animation: tada 1s ease 1.8s both}
+/* 第二屏*/
+.page2{ background:url(../images/page2/tu8.jpg) no-repeat;background-size: 100% 100%;}
+.page2{ background:url(../images/page2/tu8.jpg) no-repeat; background-size:100% 100%;}
+.page2 .contact{ position:absolute; top:.5rem; width:4rem;left:50%;margin-left:-2rem; height:5.8rem; font-size:.2rem; font-family:"微软雅黑"; color:#333}
+.page2 .contact div{ margin:.3rem;}
+.page2 .contact h2{font-size:.36rem;  text-align:center; height:.9rem; line-height:.9rem;letter-spacing:.06rem}
+/* 第二屏元素动画*/
+#page2 .contact{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both;}
+#page2 .contact .text001{-webkit-animation: zoomIn 1s ease .2s both;animation: zoomIn 1s ease .2s both}
+#page2 .contact .WeChat{-webkit-animation: rollIn 1s ease 0.6s both;animation: rollIn 1s ease .6s both}
+#page2 .contact .text002{-webkit-animation: lightSpeedIn 1s ease 1s both;animation: lightSpeedIn 1s ease 1s both}
+#page2 .contact .text003{-webkit-animation: lightSpeedIn 1s ease 1.4s both;animation: lightSpeedIn 1s ease 1.4s both}
+#page2 .contact .text004{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page2 .contact .text005{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page2 .contact .text006{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page2 .contact .text007{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page2 .contact .text008{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page2 .contact .text009{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page2 .contact .text10{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+
+
+@-webkit-keyframes knife{
+    0%,100%{transform:rotate(0deg)}
+    50%{transform:rotate(15deg)}
+}
+@keyframes knife{
+0%,100%{transform:rotate(0deg)}
+50%{transform:rotate(15deg)}
+}
+/* 第三屏*/
+.page3{ background:url(../images/page3/tu17.jpg) no-repeat; background-size:100% 100%;}
+.page3 .contact{ position:absolute; top:.5rem; width:4rem;left:50%;margin-left:-2rem; height:5.8rem; font-size:.2rem; font-family:"微软雅黑"; color:#333}
+.page3 .contact div{ margin:.3rem;}
+.page3 .contact h2{font-size:.36rem;  text-align:center; height:.9rem; line-height:.9rem;letter-spacing:.06rem}
+/* 第三屏元素动画*/
+#page3 .contact{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both;}
+#page3 .contact .text1{-webkit-animation: zoomIn 1s ease .2s both;animation: zoomIn 1s ease .2s both}
+#page3 .contact .WeChat{-webkit-animation: rollIn 1s ease 0.6s both;animation: rollIn 1s ease .6s both}
+#page3 .contact .text2{-webkit-animation: lightSpeedIn 1s ease 1s both;animation: lightSpeedIn 1s ease 1s both}
+#page3 .contact .text3{-webkit-animation: lightSpeedIn 1s ease 1.4s both;animation: lightSpeedIn 1s ease 1.4s both}
+#page3 .contact .text4{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page3 .contact .text5{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page3 .contact .text6{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page3 .contact .text7{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+#page3 .contact .text8{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
+
+@-webkit-keyframes rotate {
+    0%{transform: rotate(0deg)}
+    100%{opacity:1;transform: rotate(360deg)}
+}
+@keyframes rotate{
+	0%{transform:rotate(0deg)}
+	100%{ opacity:1;transform:rotate(360deg)}
+}
+/* 第四屏*/
+.page4{ background:url(../images/page4/tu18.jpg) no-repeat; background-size:100% 100%;}
+.page4 .contact{ position:absolute; top:.5rem; width:4rem;left:50%;margin-left:-2rem; height:5.8rem; font-size:.2rem; font-family:"微软雅黑"; color:#333}
+.page4 .contact div{ margin:.3rem;}
+.page4 .contact h2{font-size:.36rem;  text-align:center; height:.9rem; line-height:.9rem;letter-spacing:.06rem}
+/* 第四屏元素动画*/
+#page4 .contact{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both;}
+#page4 .contact .text01{-webkit-animation: zoomIn 1s ease .2s both;animation: zoomIn 1s ease .2s both}
+#page4 .contact .WeChat{-webkit-animation: rollIn 1s ease 0.6s both;animation: rollIn 1s ease .6s both}
+#page4 .contact .text02{-webkit-animation: lightSpeedIn 1s ease 1s both;animation: lightSpeedIn 1s ease 1s both}
+#page4 .contact .text03{-webkit-animation: lightSpeedIn 1s ease 1.4s both;animation: lightSpeedIn 1s ease 1.4s both}
+#page4 .contact .text04{-webkit-animation: lightSpeedIn 1s ease 1.8s both;animation: lightSpeedIn 1s ease 1.8s both}
